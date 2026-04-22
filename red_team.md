@@ -45,4 +45,6 @@ spamming write(put) requests with the same key amd different values, to test rac
 - 404 test
 - concurrent requests, 100 puts each to a different key using async/gather
     - if server has 4 threads, 1 in 4 chance that 
-    - if each thread has its own dictionary, a get req will land on a random one, which give u only 1 in 4 chances that it returns the correct, the rest 404 becat the key doesn exsit on the other threads' dictionaries 
+    - if each thread has its own dictionary, a get req will land on a random one, which give u only 3 in 4 chances that it returns the correct, the rest 404 becat the key doesn exsit on the other threads' dictionaries
+
+sample text 
